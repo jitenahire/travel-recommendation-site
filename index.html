@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-link" onclick="showPage('home-page')">Home</a>
+            <a href="#" class="nav-link" onclick="showPage('about-page')">About Us</a>
+            <a href="#" class="nav-link" onclick="showPage('contact-page')">Contact Us</a>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for beach, temple, or country...">
+                <button id="searchButton" onclick="searchRecommendations()">Search</button>
+                <button id="clearButton" onclick="clearRecommendations()">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-page" class="page-content active-page">
+            <h1>Welcome to Our Travel Recommendations Site</h1>
+            <p>Find your next ideal destination with personalized suggestions, detailed descriptions, and inspiring photos. Whether you seek a relaxing beach, a historical temple, or a vibrant country, we've got you covered.</p>
+        </section>
+
+        <section id="about-page" class="page-content">
+            <h1>About Us</h1>
+            <p>Our company is dedicated to helping travelers discover new and exciting destinations. We believe in providing accurate, up-to-date information to help you plan your perfect trip.</p>
+            <div class="team-container">
+                <div class="team-member">
+                    <h3>Team Member 1</h3>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    <p>A passionate explorer and travel planner, bringing years of experience in curating memorable trips.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Team Member 2</h3>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    <p>A dedicated researcher focused on finding hidden gems and unique cultural experiences for our users.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-page" class="page-content">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="recommendations-container">
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Travel Recommendations</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
