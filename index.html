@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel Recommendations</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link" onclick="showPage('home-page')">Home</a>
+                <a href="about.html" class="nav-link" onclick="showPage('about-page')">About Us</a>
+                <a href="contact.html" class="nav-link" onclick="showPage('contact-page')">Contact Us</a>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for beach, temple, or country..." />
+                    <button id="searchButton" onclick="searchRecommendations()">Search</button>
+                    <button id="clearButton" onclick="clearRecommendations()">Clear</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home-page" class="page-content active-page">
+                <h1>Welcome to Our Travel Recommendations Site</h1>
+                <p>Find your next ideal destination with personalized suggestions, detailed descriptions, and inspiring photos. Whether you seek a relaxing beach, a historical temple, or a vibrant country, we've got you covered.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Travel Recommendations</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

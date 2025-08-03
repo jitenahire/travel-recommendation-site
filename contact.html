@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel Recommendations</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link" onclick="showPage('home-page')">Home</a>
+                <a href="about.html" class="nav-link" onclick="showPage('about-page')">About Us</a>
+                <a href="contact.html" class="nav-link" onclick="showPage('contact-page')">Contact Us</a>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for beach, temple, or country..." />
+                    <button id="searchButton" onclick="searchRecommendations()">Search</button>
+                    <button id="clearButton" onclick="clearRecommendations()">Clear</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="contact-page" class="page-content">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <section id="recommendations-container" class="page-content">
+            <div id="results"></div>
+        </section>
+
+        <footer>
+            <p>© 2025 Travel Recommendations</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
